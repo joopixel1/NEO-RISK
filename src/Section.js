@@ -2,6 +2,12 @@ import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
 
 export default function Section({ imageUrl, name, impact, probability, last_obs, risk, diameter}) {
+  
+    const volume = 1.33 * 3.14 * Math.pow(parseFloat(diameter), 3)
+    const no = Math.round( (volume / (7.112 * Math.pow(10, -11))) )
+
+    
+
   return (
     <Card style={{ width: '70vw', height: '70vh', padding: '5vh', backgroundColor: 'rgba(128, 128, 128, 0.3)', color: '#fdfdfd'}}>
         <Row noGutters>
@@ -14,7 +20,7 @@ export default function Section({ imageUrl, name, impact, probability, last_obs,
                     <Card.Text>Risk: {risk}</Card.Text>
                     <Card.Text>Impact of being Hitten: {impact}</Card.Text>
                     <Card.Text>Probability of ever hitten Earth: {probability}</Card.Text>
-                    <Card.Text>Diameter: {diameter}</Card.Text>
+                    <Card.Text>Volume: {volume.toFixed(5)}km^3,  ({no} basketballs)</Card.Text>
                     <Card.Text>Last Observed: {last_obs}</Card.Text>
                 </Card.Body>
             </Col>

@@ -99,14 +99,6 @@ export default function Home() {
           ))
         }
 
-        <Carousel.Item>
-          <img src="/ay.jpg" width={500} height={500} alt='...'/>
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
       </Carousel>
     </div>
   );
