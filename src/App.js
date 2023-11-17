@@ -4,7 +4,6 @@ import "bootstrap/dist/js/bootstrap.bundle.min";// Bootstrap Bundle JS
 import Carousel from 'react-bootstrap/Carousel';
 import Section from './Section';
 import './App.css';
-import image1 from './ay.jpg'
 
 export default function Home() {
   const [index, setIndex] = useState(0)
